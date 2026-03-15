@@ -27,7 +27,7 @@ El sitio busca informar sobre los beneficios de la energía solar, mostrar el ca
 - **UI:** SweetAlert2
 
 ## 🔗 Enlaces
-- **Sitio Web:** https://solarcasares.vercel.app/
+- **Sitio Web:** [https://solarcasares.vercel.app/](https://solar-casares-landing.vercel.app/)
 - **Formspree:** https://formspree.io/
 
 ## 📦 Instalación y Uso Local
