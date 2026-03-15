@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Solar Casares ☀️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Landing page profesional desarrollada para **Solar Casares**, una empresa líder en soluciones de energía renovable ubicada en **Carlos Casares, Buenos Aires**. Este proyecto fue diseñado para centralizar la presencia digital de la marca, facilitando la conversión de clientes a través de una experiencia de usuario fluida y moderna.
 
-## Available Scripts
+![Estado del Proyecto](https://img.shields.io/badge/Estado-Producci%C3%B3n-success)
+![React](https://img.shields.io/badge/React-18.x-blue)
+![CSS3](https://img.shields.io/badge/CSS3-Vanilla-orange)
+![Deploy](https://img.shields.io/badge/Deploy-Vercel-black)
 
-In the project directory, you can run:
+## 🎯 Objetivo del Proyecto
+El sitio busca educar a los habitantes de Carlos Casares y alrededores sobre los beneficios de la energía solar, mostrar el catálogo de productos disponibles (paneles, baterías, termotanques solares) y proporcionar un canal de contacto directo y eficiente.
 
-### `npm start`
+## 🚀 Características Principales
+- **Diseño Responsive:** Adaptado para una navegación perfecta en móviles, tablets y escritorio.
+- **Optimización de Conversión:** Formulario de contacto integrado que envía consultas directamente al dueño del negocio.
+- **Catálogo Interactivo:** Carrusel de productos para una visualización dinámica de la oferta.
+- **Geolocalización:** Integración con Google Maps para ubicar el local físico en la provincia de Buenos Aires.
+- **Feedback al Usuario:** Implementación de SweetAlert2 para notificaciones elegantes tras el envío de formularios.
+- **Sin Dependencias de Backend:** Utiliza **Formspree** para la gestión de correos, eliminando la necesidad de servidores o bases de datos complejas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tecnologías Utilizadas
+- **Frontend:** React.js
+- **Estilos:** Vanilla CSS (Diseño Custom)
+- **Rutas:** React Router DOM
+- **Animaciones:** LottieFiles (React Lottie Player)
+- **Formularios:** Formspree API (Serverless contact solution)
+- **UI:** SweetAlert2
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Instalación y Uso Local
 
-### `npm test`
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/TU_USUARIO/solarCasares.git
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Inicia el servidor de desarrollo:
+   ```bash
+   npm start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👨‍💻 Autor
+Proyecto desarrollado íntegramente por **Enzo Pinotti** como parte del portfolio profesional.
