@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Header from './components/Header.js';
 import Main from './components/Main.js';
 import Footer from './components/Footer.js';
-import './App.css';
+import './App.scss';
 
 function App() {
   const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxXc7Iz9_rEexpgESUChma97ZQ2N1FuaoPEfMAErQvaj1XS_uAkAQbuC_mWP6xWf-G8/exec";

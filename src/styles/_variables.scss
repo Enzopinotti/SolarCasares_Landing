@@ -1,0 +1,21 @@
+// _variables.scss
+// Design Tokens for Solar Casares
+
+$blue-primary: #003366;
+$yellow-secondary: #FFCC33;
+$white-smoke: #F5F5F5;
+$white: #ffffff;
+$text-dark: #333333;
+
+$font-main: 'Mont', sans-serif;
+
+// Mixins for modern Sass
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition-standard {
+  transition: all 0.3s ease;
+}

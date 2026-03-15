@@ -1,110 +1,113 @@
+@use "sass:color";
+@use "styles/variables" as vars;
+
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-Black.woff') format('woff');
+  src: url('./assets/fonts/Mont-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-BlackItalic.woff') format('woff');
+  src: url('./assets/fonts/Mont-BlackItalic.woff') format('woff');
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-Bold.woff') format('woff');
+  src: url('./assets/fonts/Mont-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-BoldItalic.woff') format('woff');
+  src: url('./assets/fonts/Mont-BoldItalic.woff') format('woff');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-ExtraLight.woff') format('woff');
+  src: url('./assets/fonts/Mont-ExtraLight.woff') format('woff');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-ExtraLightItalic.woff') format('woff');
+  src: url('./assets/fonts/Mont-ExtraLightItalic.woff') format('woff');
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-Heavy.woff') format('woff');
+  src: url('./assets/fonts/Mont-Heavy.woff') format('woff');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-HeavyItalic.woff') format('woff');
+  src: url('./assets/fonts/Mont-HeavyItalic.woff') format('woff');
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-Light.woff') format('woff');
+  src: url('./assets/fonts/Mont-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-LightItalic.woff') format('woff');
+  src: url('./assets/fonts/Mont-LightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-Regular.woff') format('woff');
+  src: url('./assets/fonts/Mont-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-RegularItalic.woff') format('woff');
+  src: url('./assets/fonts/Mont-RegularItalic.woff') format('woff');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-SemiBold.woff') format('woff');
+  src: url('./assets/fonts/Mont-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-SemiBoldItalic.woff') format('woff');
+  src: url('./assets/fonts/Mont-SemiBoldItalic.woff') format('woff');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Mont';
-  src: url('/public/fonts/Mont-Thin.woff') format('woff');
+  src: url('./assets/fonts/Mont-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
 }
 
 body {
-  font-family: 'Mont', sans-serif;
+  font-family: vars.$font-main;
 }
 
 
@@ -121,7 +124,7 @@ html {
   right: -100%;
   width: 100%;
   height: 100%;
-  background-color: #F5F5F5;
+  background-color: vars.$white-smoke;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
   transition: right 0.3s ease;
 
@@ -149,19 +152,19 @@ html {
 }
 .menu ul li a {
   text-decoration: none;
-  color: #003366;
+  color: vars.$blue-primary;
   font-size: 18px;
 }
 
 .menu ul li .quote-button {
-  background-color: #FFCC33;
-  color: #003366;
+  background-color: vars.$yellow-secondary;
+  color: vars.$blue-primary;
   padding: 0.7rem 1rem;
   width: 75%;
   border: 0;
   border-radius: 2rem;
   margin-bottom: 4rem;
-  font-family: 'Mont';
+  font-family: vars.$font-main;
   font-size: 1rem;
   font-weight: 500;
 
@@ -174,7 +177,7 @@ html {
   display: flex;
   flex-direction: column;
   background-size: cover;
-  box-shadow: 0 10px 200px 50px #003366;
+  box-shadow: 0 10px 200px 50px vars.$blue-primary;
 }
 .header .headerSup {
   display: flex;
@@ -219,10 +222,10 @@ html {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  color: #F5F5F5;
+  color: vars.$white-smoke;
 }
 .header .headerBottom .headerTextArea .parrafoHeader {
-  color: #F5F5F5;
+  color: vars.$white-smoke;
   text-align: center;
   padding: 1.5rem;
 }
@@ -233,39 +236,40 @@ html {
   align-items: center;
 }
 .header .headerBottom .buttonsContainer .buttonProduct{
-  background-color: #003366;
-  color: #F5F5F5;
+  background-color: vars.$blue-primary;
+  color: vars.$white-smoke;
   padding: 0.7rem 1rem;
   width: 75%;
   border: 0;
   border-radius: 2rem;
   margin-bottom: 2rem;
-  font-family: 'Mont';
+  font-family: vars.$font-main;
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
 }
 .header .headerBottom .buttonsContainer .buttonInfo {
-  background-color: #FFCC33;
-  color: #F5F5F5;
+  background-color: vars.$yellow-secondary;
+  color: black;
   padding: 0.7rem 1rem;
   width: 75%;
   border: 0;
   border-radius: 2rem;
   margin-bottom: 4rem;
-  font-family: 'Mont';
+  font-family: vars.$font-main;
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
+  font-weight: 600;
 }
 
 .main-content .nosotrosContainer {
   margin-top: 3rem;
 }
 .main-content .nosotrosContainer .titleNosotros {
-  background-color: #003366;
+  background-color: vars.$blue-primary;
   width: fit-content;
-  color: #F5F5F5;
+  color: vars.$white-smoke;
   padding: 1rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
@@ -300,9 +304,9 @@ html {
 }
 .main-content .productosContainer .productosTitle{
   text-align: center;
-  background-color: #003366;
+  background-color: vars.$blue-primary;
   width: fit-content;
-  color: #F5F5F5;
+  color: vars.$white-smoke;
   padding: 1rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
@@ -350,12 +354,12 @@ html {
   margin-bottom: 2rem !important;
 }
 .carousel .carousel-content .buttonContainer .info-button {
-  background-color: #003366;
-  color: #F5F5F5;
+  background-color: vars.$blue-primary;
+  color: vars.$white-smoke;
   padding: 0.7rem 1rem;
   border: 0;
   border-radius: 2rem;
-  font-family: 'Mont';
+  font-family: vars.$font-main;
   font-size: 1rem;
   align-self: center;
   width: 80%;
@@ -372,9 +376,9 @@ html {
 }
 
 .carousel .contenedorTituloYflechas h2 {
-  background-color: #FFCC33;
+  background-color: vars.$yellow-secondary;
   padding: 1rem;
-  color: #003366;
+  color: vars.$blue-primary;
   font-size: 1rem !important;
 }
 .carousel .contenedorTituloYflechas img {
@@ -387,10 +391,10 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 -20px 800px 5px #003366;
+  box-shadow: 0 -20px 800px 5px vars.$blue-primary;
 }
 .doubtsContainer .subtitleDoubts.uno {
-  color: #F5F5F5;
+  color: vars.$white-smoke;
   text-align: center;
   padding: 1.5rem;
   padding-top: 4rem;
@@ -401,7 +405,7 @@ html {
   margin-bottom: 1rem;
 }
 .doubtsContainer .subtitleDoubts.dos{
-  color: #F5F5F5;
+  color: vars.$white-smoke;
   text-align: center;
   padding: 1.5rem;
   padding-top: 0;
@@ -411,14 +415,14 @@ html {
   margin-bottom: 0;
 }
 .doubtsContainer .titleDoubts {
-  color: #F5F5F5;
+  color: vars.$white-smoke;
   text-align: center;
   font-weight: 600;
   font-size: 28px;
   padding: 1rem;
   width: 50%;
   margin-top: 0;
-  background-color: #003366;
+  background-color: vars.$blue-primary;
   margin-bottom: 2rem;
   border-radius: 10px;
 }
@@ -431,7 +435,7 @@ html {
   padding-right: 0;
 }
 .doubtsContainer .card-list .card {
-  background-color: #FFCC33;
+  background-color: vars.$yellow-secondary;
   margin-bottom: 1rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -451,7 +455,7 @@ html {
   align-items: center;
   padding: 1rem;
   padding-bottom: 0;
-  color: #003366;
+  color: vars.$blue-primary;
   
 }
 .arrow {
@@ -477,7 +481,7 @@ html {
 }
 
 .doubtsContainer .boldTitleDoubts{
-  color: #F5F5F5;
+  color: vars.$white-smoke;
   text-align: center;
   padding: 1.5rem;
   padding-bottom: 0;
@@ -489,18 +493,18 @@ html {
 .doubtsContainer .parrafoDoubts {
   padding: 1.5rem;
   margin-top: 0;
-  color: #F5F5F5;
+  color: vars.$white-smoke;
   text-align: center;
 }
 .doubtsContainer .buttonDoubs {
-  background-color: #003366;
-  color: #F5F5F5;
+  background-color: vars.$blue-primary;
+  color: vars.$white-smoke;
   padding: 0.7rem 1rem;
   width: 75%;
   border: 0;
   border-radius: 2rem;
   margin-bottom: 3rem;
-  font-family: 'Mont';
+  font-family: vars.$font-main;
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
@@ -516,21 +520,21 @@ html {
 .contactContainer .contactTitle {
   margin-top: 0;
   padding-top: 2rem;
-  color: #F5F5F5;
+  color: vars.$white-smoke;
   text-align: center;
   font-weight: 600;
   font-size: 28px;
   padding: 1rem;
   width: 75%;
   margin-top: 4rem;
-  background-color: #003366;
+  background-color: vars.$blue-primary;
   margin-bottom: 2rem;
   border-radius: 10px;
 }
 .contactContainer .contactParrafo {
   padding: 1.5rem;
   margin-top: 0;
-  color: #333333;
+  color: vars.$text-dark;
   text-align: center;
 }
 .contactContainer .contact-form {
@@ -544,20 +548,20 @@ html {
   margin-bottom: 2rem;
 }
 .contactContainer .contact-form label {
-  color:#003366;
+  color: vars.$blue-primary;
   font-weight: 600;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
 }
 .contactContainer .contact-form .form-group input{
-  background-color: #ffffff !important;
+  background-color: vars.$white !important;
 }
 .contactContainer .contact-form .form-group input, textarea {
   border: 0;
   height: 3rem;
-  box-shadow: #0033666c 0px 0px 150px;
+  box-shadow: color.adjust(vars.$blue-primary, $alpha: -0.57) 0px 0px 150px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: vars.$white;
   padding-left: 0.5rem;
 }
 .contactContainer .contact-form .form-group textarea {
@@ -565,22 +569,22 @@ html {
 }
 .form-group input:focus,
 .form-group textarea:focus {
-  outline:#FFCC33 solid 2px; 
+  outline: vars.$yellow-secondary solid 2px; 
 }
 .contactContainer .contact-form .form-group textarea {
   height: 15rem;
-  background-color: #ffffff;
+  background-color: vars.$white;
 }
 
 .contactContainer .contact-form .botonForm{
-  background-color: #003366;
-  color: #F5F5F5;
+  background-color: vars.$blue-primary;
+  color: vars.$white-smoke;
   padding: 0.7rem 1rem;
   width: 60%;
   border: 0;
   border-radius: 2rem;
   margin-bottom: 3rem;
-  font-family: 'Mont';
+  font-family: vars.$font-main;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -594,29 +598,29 @@ html {
 }
 .contactContainer .mapButtons .locationButtonDos{
   width: 100%;
-  border: #003366 3px solid;
+  border: vars.$blue-primary 3px solid;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   background-color: transparent;
-  color: #003366;
+  color: vars.$blue-primary;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
 }
 .contactContainer .mapButtons .locationButtonUno{
   width: 100%;
-  border: #003366 3px solid;
+  border: vars.$blue-primary 3px solid;
   border-right: 1.5px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   background-color: transparent;
   font-size: 1.1rem;
-  color: #003366;
+  color: vars.$blue-primary;
   font-weight: 600;
   cursor: pointer;
 }
 .contactContainer .mapButtons .active {
-  background-color: #FFCC33;
+  background-color: vars.$yellow-secondary;
 }
 .contactContainer .google-map {
   width: 100%;
@@ -643,7 +647,7 @@ html {
   justify-content: center;
   background: rgba(255, 255, 255, 0.8);
   font-size: 24px;
-  color: #003366;
+  color: vars.$blue-primary;
   font-weight: bold;
 }
 .contactContainer .contactDetails {
@@ -653,19 +657,19 @@ html {
 }
 .contactContainer .contactDetails .address,.phone,.email {
   display: flex;
-  background-color: #FFCC33;
+  background-color: vars.$yellow-secondary;
   margin-bottom: 2rem;
   padding:  0.5rem 1.5rem;
   justify-content:flex-start;
   align-items: center;
-  color: #003366;
+  color: vars.$blue-primary;
   font-weight: 600;
   font-size: 0.9rem;
   border-radius: 10px;
 }
 .contactContainer .contactDetails .address,.phone a,.email a{
   text-decoration: none;
-  color: #003366;
+  color: vars.$blue-primary;
 }
 .contactContainer .contactDetails .iconDetail{
   width: 34px;
@@ -673,7 +677,7 @@ html {
   padding-right: 0.5rem;
 }
 .footer {
-  background-color: #003366;
+  background-color: vars.$blue-primary;
 
 }
 .footer .logoYredes {
@@ -696,9 +700,9 @@ html {
   padding: 0.6rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  border: #FFCC33 1px solid;
+  border: vars.$yellow-secondary 1px solid;
   border-radius: 50%;
-  box-shadow: #FFCC33 0px 0px 4px inset;
+  box-shadow: vars.$yellow-secondary 0px 0px 4px inset;
   cursor: pointer;
 }
 .footer .logoYredes .redesSociales li img {
@@ -709,11 +713,11 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #F5F5F5;
+  color: vars.$white-smoke;
 }
 .footer .DerechosYpoliticas .parrafoFinal {
   text-align: center;
-  text-shadow: #FFCC33 1px 1px 1px;
+  text-shadow: vars.$yellow-secondary 1px 1px 1px;
   margin-top: 0;
   font-size: 0.75rem;
 }
@@ -725,7 +729,7 @@ html {
 }
 .footer .DerechosYpoliticas .bordeAbajo {
   padding-bottom: 1rem;
-  border-bottom: #F5F5F5 solid 1px;
+  border-bottom: vars.$white-smoke solid 1px;
   width: 4rem;
 }
 @media (max-width: 360px) {
@@ -764,14 +768,14 @@ html {
     width: 100%;
   }
   .doubtsContainer .titleDoubts {
-    color: #F5F5F5;
+    color: vars.$white-smoke;
     text-align: center;
     font-weight: 600;
     font-size: 26px;
     padding: 1rem;
     width: 60%;
     margin-top: 0;
-    background-color: #003366;
+    background-color: vars.$blue-primary;
     margin-bottom: 2rem;
   }
 }
@@ -801,9 +805,9 @@ html {
     width: 45%;
   }
   .main-content .nosotrosContainer .titleNosotros {
-    background-color: #003366;
+    background-color: vars.$blue-primary;
     width: fit-content;
-    color: #F5F5F5;
+    color: vars.$white-smoke;
     padding: 1rem;
     padding-left: 2rem;
   }
@@ -947,17 +951,17 @@ html {
   }
   .navDesktop  li a {
     text-decoration: none;
-    color: #F5F5F5;
+    color: vars.$white-smoke;
   }
   .navDesktop li .quote-button {
-    background-color: #FFCC33;
-    color: #003366;
+    background-color: vars.$yellow-secondary;
+    color: vars.$blue-primary;
     padding: 0.7rem 1rem;
     width: 75%;
     border: 0;
     border-radius: 2rem;
     margin-bottom: 4rem;
-    font-family: 'Mont';
+    font-family: vars.$font-main;
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none
@@ -1043,12 +1047,12 @@ html {
     background-color: transparent;
     border: none;
     align-items: center;
-    color: #003366;
+    color: vars.$blue-primary;
     font-weight: 600;
     cursor: pointer !important;
   }
   .carousel-selectable-list .carousel-selectable-item.active{
-    background-color: #FFCC33 !important;
+    background-color: vars.$yellow-secondary !important;
     font-weight: 900;
   }
   .carousel-selectable-list .carousel-selectable-item img{
@@ -1079,7 +1083,7 @@ html {
     width: 100%;
   }
   .doubtsContainer .boldTitleDoubts {
-      color: #F5F5F5;
+      color: vars.$white-smoke;
       text-align: center;
       padding: 3rem;
       padding-bottom: 0;
@@ -1161,7 +1165,7 @@ html {
   .footer .DerechosYpoliticas .bordeAbajo {
     padding-bottom: 0rem;
     border-bottom: 0;
-    border-left: #F5F5F5 solid 1.7px;
+    border-left: vars.$white-smoke solid 1.7px;
     padding-left: 0.5rem;
     margin-left: 1rem;
   }
