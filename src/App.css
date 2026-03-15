@@ -1,0 +1,1204 @@
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-Heavy.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-HeavyItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/public/fonts/Mont-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Mont', sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  
+}
+.menu-icon {
+  cursor: pointer;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #F5F5F5;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+
+}
+.menu.open {
+  right: 0;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 3rem;
+}
+
+.menu ul li {
+  margin: 20px 0;
+  text-align: center;
+  text-align: start;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+.App{
+  overflow: hidden;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #003366;
+  font-size: 18px;
+}
+
+.menu ul li .quote-button {
+  background-color: #FFCC33;
+  color: #003366;
+  padding: 0.7rem 1rem;
+  width: 75%;
+  border: 0;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+  font-family: 'Mont';
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+.navDesktop {
+  display: none;
+}
+.header {
+  background-image: url('https://fedesagency.com/solarCaseres/fondoSuperiorMobile.jpg');
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  box-shadow: 0 10px 200px 50px #003366;
+}
+.header .headerSup {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+.header .headerSup .logo{
+  width: 200px;
+  position: relative;
+  bottom: 10px;
+}
+.header .headerSup .logo_oscuro{
+  width: 200px;
+}
+.header .headerSup .menu-icon{
+  width: 50px;
+}
+.header .headerBottom .headerTextArea {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.header .headerBottom .headerTextArea.thank {
+  padding: 0;
+}
+.header .headerBottom .headerTextArea .check-animation{
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+}
+.header .headerBottom .headerTextArea .titleHeader.thank{
+  position: relative;
+  font-size: 3rem;
+  margin-top: 8rem;
+}
+.header .headerBottom .headerTextArea .parrafoHeader.thank {
+  position: relative;
+  bottom: 4rem;
+}
+.header .headerBottom .headerTextArea .titleHeader{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #F5F5F5;
+}
+.header .headerBottom .headerTextArea .parrafoHeader {
+  color: #F5F5F5;
+  text-align: center;
+  padding: 1.5rem;
+}
+.header .headerBottom .buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  align-items: center;
+}
+.header .headerBottom .buttonsContainer .buttonProduct{
+  background-color: #003366;
+  color: #F5F5F5;
+  padding: 0.7rem 1rem;
+  width: 75%;
+  border: 0;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Mont';
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+.header .headerBottom .buttonsContainer .buttonInfo {
+  background-color: #FFCC33;
+  color: #F5F5F5;
+  padding: 0.7rem 1rem;
+  width: 75%;
+  border: 0;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+  font-family: 'Mont';
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.main-content .nosotrosContainer {
+  margin-top: 3rem;
+}
+.main-content .nosotrosContainer .titleNosotros {
+  background-color: #003366;
+  width: fit-content;
+  color: #F5F5F5;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 28px;
+  margin-top: 4rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.main-content .nosotrosContainer .parrafoNosotros {
+  padding: 1.5rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.main-content .nosotrosContainer .iconsContainer{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 6rem;
+}
+.main-content .nosotrosContainer .iconsContainer div {
+  display: flex;
+  flex-direction: column;
+}
+.main-content .nosotrosContainer .iconsContainer .iconos2 {
+  position: relative;
+  top: 4rem;
+}
+.main-content .productosContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .productosContainer .productosTitle{
+  text-align: center;
+  background-color: #003366;
+  width: fit-content;
+  color: #F5F5F5;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 28px;
+  border-radius: 10px;
+}
+.main-content .productosContainer .productosParrafo {
+  padding: 1.5rem;
+  margin-top: 0rem;
+}
+.carousel-selectable-list {
+  display: none;
+}
+.carousel {
+  width: 100%;
+}
+.carousel .carousel-content{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.carousel .carousel-content section {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.carousel .carousel-content section .carousel-image {
+  align-self: center;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+.carousel .carousel-content .carousel-description {
+  width: 80%;
+  max-width: 400px;
+  align-self: center;
+}
+.buttonContainer {
+  width: 80%;
+  max-width: 400px;
+  align-self: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem !important;
+}
+.carousel .carousel-content .buttonContainer .info-button {
+  background-color: #003366;
+  color: #F5F5F5;
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 2rem;
+  font-family: 'Mont';
+  font-size: 1rem;
+  align-self: center;
+  width: 80%;
+  text-decoration: none;
+}
+.carousel .carousel-content .info-button .flechaBoton {
+  margin-left: 1rem;
+}
+.carousel .contenedorTituloYflechas {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carousel .contenedorTituloYflechas h2 {
+  background-color: #FFCC33;
+  padding: 1rem;
+  color: #003366;
+  font-size: 1rem !important;
+}
+.carousel .contenedorTituloYflechas img {
+  height: 22px;
+  width: 12px;
+}
+.doubtsContainer {
+  background-image: url('https://fedesagency.com/solarCaseres/fondoDudasMobile.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 -20px 800px 5px #003366;
+}
+.doubtsContainer .subtitleDoubts.uno {
+  color: #F5F5F5;
+  text-align: center;
+  padding: 1.5rem;
+  padding-top: 4rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 1rem;
+}
+.doubtsContainer .subtitleDoubts.dos{
+  color: #F5F5F5;
+  text-align: center;
+  padding: 1.5rem;
+  padding-top: 0;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+.doubtsContainer .titleDoubts {
+  color: #F5F5F5;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  padding: 1rem;
+  width: 50%;
+  margin-top: 0;
+  background-color: #003366;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+.doubtsContainer .card-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0rem;
+  padding: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+.doubtsContainer .card-list .card {
+  background-color: #FFCC33;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  max-width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  border-radius: 3px;
+  max-height: 110px !important;
+}
+.doubtsContainer .card-list .card.expanded {
+  max-height: none !important;
+}
+.doubtsContainer .card-list .card .card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 0;
+  color: #003366;
+  
+}
+.arrow {
+  width: 16px;
+  height: 10px;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 0.5rem;
+}
+.arrow.expanded {
+  transform: rotate(180deg);
+}
+.card-description {
+  padding: 1rem;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  max-height: 0;
+  padding-top: 0rem;
+  margin-top: 0;
+  
+}
+.card.expanded .card-description {
+  opacity: 1;
+}
+
+.doubtsContainer .boldTitleDoubts{
+  color: #F5F5F5;
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 0;
+}
+.doubtsContainer .parrafoDoubts {
+  padding: 1.5rem;
+  margin-top: 0;
+  color: #F5F5F5;
+  text-align: center;
+}
+.doubtsContainer .buttonDoubs {
+  background-color: #003366;
+  color: #F5F5F5;
+  padding: 0.7rem 1rem;
+  width: 75%;
+  border: 0;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+  font-family: 'Mont';
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+.contactContainer {
+  background-image: url("https://fedesagency.com/solarCaseres/fondoContactoMobile.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactContainer .contactTitle {
+  margin-top: 0;
+  padding-top: 2rem;
+  color: #F5F5F5;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  padding: 1rem;
+  width: 75%;
+  margin-top: 4rem;
+  background-color: #003366;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+.contactContainer .contactParrafo {
+  padding: 1.5rem;
+  margin-top: 0;
+  color: #333333;
+  text-align: center;
+}
+.contactContainer .contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.contactContainer .contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.contactContainer .contact-form label {
+  color:#003366;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.contactContainer .contact-form .form-group input{
+  background-color: #ffffff !important;
+}
+.contactContainer .contact-form .form-group input, textarea {
+  border: 0;
+  height: 3rem;
+  box-shadow: #0033666c 0px 0px 150px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding-left: 0.5rem;
+}
+.contactContainer .contact-form .form-group textarea {
+  padding-top: 1rem;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline:#FFCC33 solid 2px; 
+}
+.contactContainer .contact-form .form-group textarea {
+  height: 15rem;
+  background-color: #ffffff;
+}
+
+.contactContainer .contact-form .botonForm{
+  background-color: #003366;
+  color: #F5F5F5;
+  padding: 0.7rem 1rem;
+  width: 60%;
+  border: 0;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+  font-family: 'Mont';
+  font-size: 1rem;
+  cursor: pointer;
+}
+.contactContainer .mapButtons {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  
+}
+.contactContainer .mapButtons .locationButtonDos{
+  width: 100%;
+  border: #003366 3px solid;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: transparent;
+  color: #003366;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.contactContainer .mapButtons .locationButtonUno{
+  width: 100%;
+  border: #003366 3px solid;
+  border-right: 1.5px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: transparent;
+  font-size: 1.1rem;
+  color: #003366;
+  font-weight: 600;
+  cursor: pointer;
+}
+.contactContainer .mapButtons .active {
+  background-color: #FFCC33;
+}
+.contactContainer .google-map {
+  width: 100%;
+  height: 30rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.contactContainer .google-map iframe {
+  height: 100%;
+  width: 100%;
+}
+.blurred iframe {
+  filter: blur(0.5px);
+}
+
+.coming-soon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  color: #003366;
+  font-weight: bold;
+}
+.contactContainer .contactDetails {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.contactContainer .contactDetails .address,.phone,.email {
+  display: flex;
+  background-color: #FFCC33;
+  margin-bottom: 2rem;
+  padding:  0.5rem 1.5rem;
+  justify-content:flex-start;
+  align-items: center;
+  color: #003366;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 10px;
+}
+.contactContainer .contactDetails .address,.phone a,.email a{
+  text-decoration: none;
+  color: #003366;
+}
+.contactContainer .contactDetails .iconDetail{
+  width: 34px;
+  height: 39px;
+  padding-right: 0.5rem;
+}
+.footer {
+  background-color: #003366;
+
+}
+.footer .logoYredes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .logoYredes .logo {
+  width: 150px;
+  margin-top: 2rem;
+}
+.footer .logoYredes .redesSociales {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.footer .logoYredes .redesSociales li {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border: #FFCC33 1px solid;
+  border-radius: 50%;
+  box-shadow: #FFCC33 0px 0px 4px inset;
+  cursor: pointer;
+}
+.footer .logoYredes .redesSociales li img {
+  width: 22px;
+  margin-top: 0;
+}
+.footer .DerechosYpoliticas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #F5F5F5;
+}
+.footer .DerechosYpoliticas .parrafoFinal {
+  text-align: center;
+  text-shadow: #FFCC33 1px 1px 1px;
+  margin-top: 0;
+  font-size: 0.75rem;
+}
+.footer .DerechosYpoliticas .divFooter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.footer .DerechosYpoliticas .bordeAbajo {
+  padding-bottom: 1rem;
+  border-bottom: #F5F5F5 solid 1px;
+  width: 4rem;
+}
+@media (max-width: 360px) {
+  .carousel .carousel-content .carousel-image {
+    align-self: center;
+    width: 300px;
+  }
+  .carousel .contenedorTituloYflechas h2 {
+    font-size: 0.75rem !important;
+  }
+  
+}
+
+@media (max-width: 420px) {
+  .carousel .contenedorTituloYflechas h2 {
+    font-size: 1.1rem;
+  }
+  .main-content .nosotrosContainer .iconsContainer div img {
+    width: 150px !important;
+  }
+  .carousel .carousel-content .carousel-image {
+    align-self: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  .carousel .carousel-content .carousel-description {
+    width: 100%;
+    max-width: 400px;
+    align-self: center;
+  }
+  .buttonContainer {
+    width: 100%;
+  }
+  .carousel .carousel-content .info-button {
+    
+    width: 100%;
+  }
+  .doubtsContainer .titleDoubts {
+    color: #F5F5F5;
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    padding: 1rem;
+    width: 60%;
+    margin-top: 0;
+    background-color: #003366;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 600px) {
+  .header {
+    background-image: url('https://fedesagency.com/solarCaseres/fondoSuperiorTablet2.jpg');
+  }
+  .header .headerSup {
+      padding: 2rem;
+  }
+  .header .headerBottom .headerTextArea {
+    padding: 2rem;
+  }
+  .header .headerBottom .headerTextArea .titleHeader{
+    font-size: 2.5rem;
+  }
+  .header .headerBottom .headerTextArea .parrafoHeader {
+    font-size: 1.1rem;
+  }
+  .header .headerBottom .buttonsContainer {
+    padding: 2rem;
+  }
+  .header .headerBottom .buttonsContainer .buttonProduct{
+    width: 45%;
+  }
+  .header .headerBottom .buttonsContainer .buttonInfo {
+    width: 45%;
+  }
+  .main-content .nosotrosContainer .titleNosotros {
+    background-color: #003366;
+    width: fit-content;
+    color: #F5F5F5;
+    padding: 1rem;
+    padding-left: 2rem;
+  }
+  .main-content .nosotrosContainer .parrafoNosotros {
+    padding: 2rem;
+  }
+  .iconsContainer {
+    padding: 2rem;
+  }
+  .main-content .productosContainer .productosParrafo {
+    padding: 2rem;
+  }
+  .contenedorUno {
+    width: 80%;
+  }
+
+  .carousel .contenedorTituloYflechas h2 {
+      font-size: 1.2rem !important;
+  }
+
+  .doubtsContainer .card-list {
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+  .parrafoDoubts {
+    padding: 2rem !important;
+  }
+  .doubtsContainer .buttonDoubs {
+    width: 45%;
+  }
+  .contactContainer .contactParrafo {
+      padding: 2rem;
+  }
+  .contactContainer .contact-form .botonForm {
+      width: 45%;
+  }
+  .footer .DerechosYpoliticas .parrafoFinal {
+
+      font-size: 1rem;
+  }
+  .footer .logoYredes .redesSociales {
+      display: flex;
+      width: 50%;
+      justify-content: center;
+      margin-top: 2rem !important;
+  }
+}
+@media (min-width: 800px) {
+
+  .doubtsContainer .buttonDoubs {
+    width: 35%;
+  };
+  
+  
+  .header .headerBottom .buttonsContainer .buttonProduct{
+    width: 35%;
+  }
+  .header .headerBottom .headerTextArea {
+    padding: 3rem;
+  }
+  .header .headerBottom .headerTextArea .titleHeader{
+    font-size: 3rem;
+  }
+  .header .headerBottom .buttonsContainer .buttonInfo {
+    width: 35%;
+  }
+  .main-content .nosotrosContainer .titleNosotros {
+
+    padding-left: 3rem;
+  }
+  .main-content .nosotrosContainer .parrafoNosotros {
+      padding: 3rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+  }
+  .iconsContainer {
+      padding: 3.5rem;
+  }
+  .main-content .productosContainer .productosParrafo {
+    padding: 3rem;
+  }
+  .carousel .carousel-content .carousel-image {
+    max-width: 500px !important;
+  }
+  .carousel .carousel-content .carousel-description {
+      width: 500px !important;
+  }
+  .buttonContainer {
+      width: 500px !important;
+  }
+  .carousel .contenedorTituloYflechas h2 {
+      font-size: 1.4rem !important;
+  }
+  .carousel .carousel-content .carousel-description {
+      margin-top: 2.5rem;
+  }
+  .contactContainer .contactParrafo {
+    padding: 3rem;
+  }
+  .doubtsContainer {
+    background-image: url('https://fedesagency.com/solarCaseres/fondoDudasDesktop.jpg');
+  };
+}
+@media (min-width: 1024px) {
+  .header {
+    background-image: url('https://fedesagency.com/solarCaseres/fondoSuperiorDesktop.jpg');
+    background-size: cover;
+  }
+  .header .headerSup {
+      padding: 3rem;
+      padding-top: 1rem !important;
+  }
+  .header .headerSup img{
+      width: 140px;
+      position: relative;
+      bottom: 0.5rem;
+  }
+  .header .headerBottom .headerTextArea {
+      padding-top: 1rem;
+      padding-bottom: 0;
+  }
+  .header .headerBottom .headerTextArea .titleHeader {
+    margin-top: 0;
+  }
+
+  .navDesktop {
+    display: flex;
+    list-style: none;
+    padding-left: 1rem;
+  }
+  .menu-icon{
+    display: none;
+  }
+  .navDesktop  li {
+    margin: 20px 0;
+    text-align: center;
+    text-align: start;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  .navDesktop  li a {
+    text-decoration: none;
+    color: #F5F5F5;
+  }
+  .navDesktop li .quote-button {
+    background-color: #FFCC33;
+    color: #003366;
+    padding: 0.7rem 1rem;
+    width: 75%;
+    border: 0;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+    font-family: 'Mont';
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none
+  }
+  .header .headerBottom .headerTextArea .titleHeader {
+      font-size: 4rem;
+  }
+  .header .headerBottom .headerTextArea .parrafoHeader {
+      font-size: 1.5rem;
+  }
+  .header .headerBottom .buttonsContainer {
+      display: flex;
+      flex-direction: row;
+      padding: 3rem;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-bottom: 6rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
+  }
+  .header .headerBottom .buttonsContainer .buttonInfo {
+    margin-bottom: 0rem;
+    width: 20%;
+  }
+  .header .headerBottom .buttonsContainer .buttonProduct {
+    margin-bottom: 0rem;
+    width: 20%;
+  }
+  .main-content .nosotrosContainer {
+      display: flex;
+  }
+  .main-content .nosotrosContainer .titleNosotros {
+    font-size: 40px;
+    padding-left: 5rem;
+  }
+  .main-content .nosotrosContainer .parrafoNosotros{
+      padding: 3rem;
+      padding-left: 5rem;
+      padding-top: 3rem;
+  }
+  .main-content .nosotrosContainer .parrafoNosotros.dos{
+
+      padding-top: 0rem;
+  }
+  .iconsContainer {
+    position: relative;
+    top: 2rem;
+  }
+  .main-content .productosContainer .productosTitle {
+    font-size: 40px;
+  }
+  .main-content .productosContainer .productosParrafo {
+      width: 60%;
+      text-align: center;
+  }
+  .carousel .carousel-content {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 5rem;
+      padding-right: 5rem;
+  }
+  .carousel-content .contenedorTituloYflechas {
+    display: none;
+  }
+
+  .carousel-selectable-list {
+    display: flex;
+    flex-direction: column;
+    width: 50%;  
+    height: 680px; 
+    justify-content: space-around;
+
+  }
+  .carousel-selectable-item p {
+    font-size: 1.1rem !important;
+  }
+  .carousel-selectable-list .carousel-selectable-item {
+    width: 95%;
+    height: 40px;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    color: #003366;
+    font-weight: 600;
+    cursor: pointer !important;
+  }
+  .carousel-selectable-list .carousel-selectable-item.active{
+    background-color: #FFCC33 !important;
+    font-weight: 900;
+  }
+  .carousel-selectable-list .carousel-selectable-item img{
+    display: none;
+    margin-right: 1rem;
+    width: 60px;
+    position: relative;
+    right: 5px;
+  }
+  .carousel-selectable-list .carousel-selectable-item.active img{
+    display: flex;
+  }
+  .doubtsContainer .subtitleDoubts.uno {
+    font-size: 40px;
+  }
+  .doubtsContainer .subtitleDoubts.dos {
+    font-size: 40px;
+    padding-bottom: 0.5rem;
+  }
+  .doubtsContainer .titleDoubts {
+    font-size: 40px;
+  }
+  .doubtsContainer .card-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .doubtsContainer .card-list .card{
+    width: 100%;
+  }
+  .doubtsContainer .boldTitleDoubts {
+      color: #F5F5F5;
+      text-align: center;
+      padding: 3rem;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-weight: 700;
+      font-size: 40px;
+      margin-top: 0;
+  }
+  
+  .doubtsContainer .buttonDoubs {
+      width: 25%;
+  }
+  .contenedorUno {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 90%;
+  }
+  .contenedorUno .contact-form {
+    width: 100%;
+    padding-top: 0rem !important;
+  }
+  .contenedorUno .contenedorDos {
+    width: 100%;
+    padding-right: 3rem;
+  }
+  .contactContainer .contactDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .contactContainer .contact-form .botonForm {
+      margin-bottom: 0rem;
+  }
+  .contactContainer .contactDetails {
+    width: 95%;
+    margin-bottom: 4rem !important;
+    margin-top: 1rem;
+  }
+  .contactContainer .contactDetails div {
+    width: 45%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .contactContainer .google-map {
+      margin-bottom: 0rem !important;
+      height: 39.35rem;
+  }
+  .contactContainer {
+    background-image: url('https://fedesagency.com/solarCaseres/fondoContactoDesktop.png');
+  }
+  .footer .logoYredes {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+  }
+  .footer .logoYredes .redesSociales {
+    display: flex;
+    width: 20%;
+    position: relative;
+    top: 1.5rem;
+  }
+  .footer .logoYredes .logo {
+      width: 200px;
+      margin-top: 2rem;
+  }
+  .footer .DerechosYpoliticas {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .divFooter{
+    display: flex;
+    flex-direction: row !important;
+  }
+  .footer .DerechosYpoliticas .bordeAbajo {
+    padding-bottom: 0rem;
+    border-bottom: 0;
+    border-left: #F5F5F5 solid 1.7px;
+    padding-left: 0.5rem;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .header {
+    background-image: url('https://fedesagency.com/solarCaseres/fondoSuperiorDesktopGrande.jpg');
+  }
+  .header .headerSup {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .header .headerBottom .headerTextArea {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .main-content .productosContainer .productosParrafo {
+      width: 70%;
+      text-align: center;
+  }
+  .header .headerBottom .buttonsContainer {
+      display: flex;
+      flex-direction: row;
+      padding: 3rem;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-bottom: 6rem;
+      padding-left: 17rem;
+      padding-right: 17rem;
+  }
+  .quote-button {
+    margin-left: 6rem;
+  }
+  .main-content .nosotrosContainer .textArea {
+      width: 60%;
+  }
+  .doubtsContainer {
+    background-image: url('https://fedesagency.com/solarCaseres/fondoDudasDesktopGrande.jpg');
+  }
+}
