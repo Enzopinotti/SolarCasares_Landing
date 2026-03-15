@@ -1,6 +1,6 @@
 # Solar Casares ☀️
 
-Landing page profesional desarrollada para **Solar Casares**, una empresa líder en soluciones de energía renovable ubicada en **Carlos Casares, Buenos Aires**. Este proyecto fue diseñado para centralizar la presencia digital de la marca, facilitando la conversión de clientes a través de una experiencia de usuario fluida y moderna.
+Landing page profesional desarrollada para **Solar Casares**, una empresa líder en soluciones de energía renovable ubicada en **Carlos Casares, Buenos Aires**. Este proyecto fue diseñado para centralizar la presencia digital de la marca, facilitando la conversión de clientes a través de una experiencia de usuario fluida y moderna. Proyecto realizado en FedesConsultora(https://fedes.ai) para el cliente Solar Casares.
 
 ![Estado del Proyecto](https://img.shields.io/badge/Estado-Producci%C3%B3n-success)
 ![React](https://img.shields.io/badge/React-18.x-blue)
@@ -8,9 +8,9 @@ Landing page profesional desarrollada para **Solar Casares**, una empresa líder
 ![Deploy](https://img.shields.io/badge/Deploy-Vercel-black)
 
 ## 🎯 Objetivo del Proyecto
-El sitio busca educar a los habitantes de Carlos Casares y alrededores sobre los beneficios de la energía solar, mostrar el catálogo de productos disponibles (paneles, baterías, termotanques solares) y proporcionar un canal de contacto directo y eficiente.
+El sitio busca informar sobre los beneficios de la energía solar, mostrar el catálogo de productos disponibles (paneles, baterías, termotanques solares) y proporcionar un canal de contacto directo y eficiente.
 
-## 🚀 Características Principales
+## 🌟 Características Principales
 - **Diseño Responsive:** Adaptado para una navegación perfecta en móviles, tablets y escritorio.
 - **Optimización de Conversión:** Formulario de contacto integrado que envía consultas directamente al dueño del negocio.
 - **Catálogo Interactivo:** Carrusel de productos para una visualización dinámica de la oferta.
@@ -25,6 +25,10 @@ El sitio busca educar a los habitantes de Carlos Casares y alrededores sobre los
 - **Animaciones:** LottieFiles (React Lottie Player)
 - **Formularios:** Formspree API (Serverless contact solution)
 - **UI:** SweetAlert2
+
+## 🔗 Enlaces
+- **Sitio Web:** https://solarcasares.vercel.app/
+- **Formspree:** https://formspree.io/
 
 ## 📦 Instalación y Uso Local
 
@@ -42,4 +46,4 @@ El sitio busca educar a los habitantes de Carlos Casares y alrededores sobre los
    ```
 
 ## 👨‍💻 Autor
-Proyecto desarrollado íntegramente por **Enzo Pinotti** como parte del portfolio profesional.
+Proyecto desarrollado íntegramente por **Enzo Pinotti**.

@@ -13,7 +13,7 @@ const ContactForm = () => {
 
   // Reemplaza esto con tu ID de Formspree (prepáralo en formspree.io)
   // Es la forma más limpia para tu portfolio sin usar .env
-  const FORMSPREE_URL = "https://formspree.io/f/XXXXX"; 
+  const FORMSPREE_URL = "https://formspree.io/f/mjgaelow"; 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
